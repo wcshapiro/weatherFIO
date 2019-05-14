@@ -1,0 +1,56 @@
+body {
+	background-image: url('default2.jpg');
+	background-size: cover cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+	text-shadow: 2px 2px 1px black;
+	font-family: Helvetica;
+}
+table{
+	border: 1px solid black;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 10px;
+	border-spacing: 15px 5px;
+	visibility: hidden;
+	position: absolute;
+
+}
+#windSpeed, #humidity {
+	text-align: left;
+}
+#cityHeader0 {
+	font-size: 45px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#searchContainer {
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#searchContainer input {
+	width: 200px;
+}
+#searchContainer button {
+	background-color: rgb(1,159,198);
+	width: 75px;
+}
+.searchControl {
+	box-shadow: 2px 2px 5px black;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+/*BEGINNING OF FIRST CONTAINER*/
+#weatherDetails{
+	font-size: 18px;
+	vertical-align: 50%;
+}
+#temperature{
+	font-size: 28px;
+	vertical-align: 25%;
+}
+#weekDay {
+	font-size: 25px;
+}
