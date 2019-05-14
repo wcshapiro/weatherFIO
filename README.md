@@ -1,0 +1,4 @@
+# weatherFIO
+weather website that displays 5-day forecast for "city, state" requests 
+
+This program operates through the use of two different API's that work together to get the full picture. the OpenWeather API is able to get weather forecast data on cities, however, it is not able to specify which city of that name. for example, typing "lexington, returns the weather for a lexington, but it might not be the right lexington. This is where the second API comes in. The opencagedata api is able to return longitude/lattitude coordinates based on address input. This way we can get specific city information by typing in an address like "lexington, ky", sending that info to the API and getting the longitude and lattitude of that location. From there, the longitude and lattitude coordinates are sent to the OpenWeather API and the weather data for the next 5 days at that location is returned. 
