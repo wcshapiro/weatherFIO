@@ -61,9 +61,18 @@ function init(resultFromServer){
   		weekday[5] = "Friday";
   		weekday[6] = "Saturday";
   		var n = weekday[d.getDay()+j];
-  		console.log(j+d.getDay());
+  		// console.log(j+d.getDay());
   		if ((j+d.getDay()) == 7){
   			dateElement.innerText = weekday[0];
+  		}
+  		else if ((j+d.getDay()) == 8){
+  			dateElement.innerText = weekday[1];
+  		}
+  		else if ((j+d.getDay()) == 9){
+  			dateElement.innerText = weekday[2];
+  		}
+  		else if ((j+d.getDay()) == 10){
+  			dateElement.innerText = weekday[3];
   		}
   		else{
   			dateElement.innerText = n;
