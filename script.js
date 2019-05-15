@@ -61,7 +61,14 @@ function init(resultFromServer){
   		weekday[5] = "Friday";
   		weekday[6] = "Saturday";
   		var n = weekday[d.getDay()+j];
-		dateElement.innerText = n;
+  		console.log(j+d.getDay());
+  		if ((j+d.getDay()) == 7){
+  			dateElement.innerText = weekday[0];
+  		}
+  		else{
+  			dateElement.innerText = n;
+  		}
+		
 		weatherDescriptionHeader.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
 		termperatureElement.innerHTML = Math.floor(resultFromServer.list[i].main.temp) + '&#176';
 		windSpeedElement.innerHTML = 'Winds at ' + Math.floor(resultFromServer.list[i].wind.speed) + ' m/s';
